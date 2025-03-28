@@ -1,0 +1,87 @@
+   @media screen and (max-width: 768px) {
+    .book {
+      width: 95%;
+      height: 90vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .page {
+      height: 100%;
+    }
+  
+    .content {
+      width: 90%;
+      height: 65vh;
+      padding: 20px;
+      font-size: 16px;
+      overflow-y: auto;
+    }
+  
+    .prev-button,
+    .next-button {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    font-size: 13px;
+    padding: 6px 10px;
+    transform: translateY(0);
+    margin-bottom: 12%;
+} 
+
+  
+    .prev-button {
+      left: 20px;
+    }
+  
+    .next-button {
+      right: 20px;
+    }
+  
+    .prev-button:hover,
+    .next-button:hover {
+      transform: scale(1.05);
+      background-color: #1c256e;
+    }
+  
+    .stack-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .project-visual {
+      width: 90%;
+    }
+  
+    .contact-form {
+      max-width: 90%;
+    }
+  
+    .social-links {
+      font-size: 28px;
+    }
+  
+    .table-of-contents {
+      font-size: 16px;
+    }
+  
+    .timeline .entry {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .stack-item i {
+      font-size: 45px;
+    }
+  
+    .stack-item span {
+      font-size: 13px;
+    }
+  }
+  

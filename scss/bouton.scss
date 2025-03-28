@@ -1,0 +1,33 @@
+.prev-button, .next-button {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  z-index: 9;
+}
+.prev-button { left: 8%; }
+.next-button { right: 8%; }
+
+button:hover {
+  background: $color-hover;
+}
+
+.prev-button,
+.next-button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}

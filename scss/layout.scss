@@ -1,0 +1,60 @@
+body {
+  background: url("parchemin2.jpg") no-repeat center center/cover;
+  font-family: $font-main;
+  font-size: $font-size-base;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $book-bg;
+  overflow: hidden;
+  margin: 0;
+}
+
+.book-container {
+  perspective: 1500px;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $page-bg;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.page-enter {
+  animation: fadeInPage 0.5s ease;
+}
+.page-exit {
+  animation: fadeOutPage 0.5s ease;
+}
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeOutPage {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-20px); }
+}

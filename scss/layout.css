@@ -1,0 +1,146 @@
+.book-container {
+  perspective: 1500px;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("livre.png") no-repeat center center/cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.page:nth-child(1) {
+  z-index: 12;
+}
+
+.page:nth-child(2) {
+  z-index: 11;
+}
+
+.page:nth-child(3) {
+  z-index: 10;
+}
+
+.page:nth-child(4) {
+  z-index: 9;
+}
+
+.page:nth-child(5) {
+  z-index: 8;
+}
+
+.page:nth-child(6) {
+  z-index: 7;
+}
+
+.page:nth-child(7) {
+  z-index: 6;
+}
+
+.page:nth-child(8) {
+  z-index: 5;
+}
+
+.page:nth-child(9) {
+  z-index: 4;
+}
+
+.page:nth-child(10) {
+  z-index: 3;
+}
+
+.page:nth-child(11) {
+  z-index: 2;
+}
+
+.page:nth-child(12) {
+  z-index: 1;
+}
+
+.content {
+  width: 80%;
+  max-width: 1000px;
+  height: 60vh;
+  background: #a9b5ec;
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+#cover .content {
+  justify-content: center;
+}
+
+/* Boutons de navigation */
+.prev-button,
+.next-button {
+  position: absolute;
+  bottom: 30px;
+  z-index: 20;
+  background-color: #151c5a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #2a347f;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .book {
+    width: 95%;
+    height: 90vh;
+  }
+  .prev-button,
+  .next-button {
+    bottom: 15px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .content {
+    padding: 20px;
+    height: 65vh;
+  }
+}/*# sourceMappingURL=layout.css.map */
